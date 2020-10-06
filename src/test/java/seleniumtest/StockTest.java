@@ -1,5 +1,6 @@
 package seleniumtest;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.AfterClass;
@@ -25,14 +26,40 @@ public class StockTest {
 	@Test
 	public void stockTests() {
 		List<WebElement> targList;
-		WebElement riser;
 		
-		driver.get("https://www.hl.co.uk/shares/stock-market-summary/ftse-100");
-		targList = driver.findElements(By.xpath("//*[@id=\"view-constituents\"]/*"));
+		driver.get("https://www.hl.co.uk/shares/stock-market-summary/ftse-100/risers");
+		targList = driver.findElements(By.xpath("//*[@id=\"view-constituents\"]/div/table/tbody/*"));
 		
+		String msg;
+		
+		ArrayList<String[]> myRisers = new ArrayList();
+		
+		System.out.println("Size of the list: " + targList.toArray().length);
 		for(WebElement element:targList) {
-			System.out.println(element.getText());
+			msg = element.getText();
+			myRisers.add(msg.split("\n"));
 		}
+		
+		int x = 0;
+		double highestValue = 0;
+		
+		for(String[] strArr : myRisers) {
+			for(String item : strArr) {
+				if(x==1) {
+					System.out.println("- price:" + item + ",\t");
+					item = item.replace(",", "");
+					if(Double.parseDouble(item)>highestValue) {
+						highestValue = Double.parseDouble(item);
+					}
+				}
+				x++;
+			}
+			System.out.println();
+			x=0;
+		}
+		
+		System.out.println("Highest price: " + highestValue);
+
 
 	
 	}

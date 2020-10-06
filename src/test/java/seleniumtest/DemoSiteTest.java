@@ -14,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.PageFactory;
 
 public class DemoSiteTest {
 	
@@ -28,36 +29,39 @@ public class DemoSiteTest {
 	
 	@Test
 	public void webpageTesting() throws Exception{
-		WebElement target;
-		WebElement user;
-		WebElement pass;
+//		WebElement target;
+//		WebElement user;
+//		WebElement pass;
 		
-        driver.get("http://thedemosite.co.uk/index.php");
-
+        DemoSitePortal homePage = PageFactory.initElements(driver, DemoSitePortal.class);
+        homePage.navUserPage();
+        homePage.addUserPage.createUser("user", "user");
+        homePage.navLoginPage();
+        homePage.addLoginPage.loginUser("user", "user");
 		
-		target = driver.findElement(By.xpath("/html/body/div/center/table/tbody/tr[2]/td/div/center/table/tbody/tr/td[2]/p/small/a[3]"));
-		target.click();
+//		target = driver.findElement(By.xpath("/html/body/div/center/table/tbody/tr[2]/td/div/center/table/tbody/tr/td[2]/p/small/a[3]"));
+//		target.click();
 		
-		user = driver.findElement(By.name("username"));
-		user.sendKeys("guest");
-		
-		pass = driver.findElement(By.name("password"));
-		pass.sendKeys("guest");
-		
-		target = driver.findElement(By.name("FormsButton2"));
-		target.click();
-		
-		target = driver.findElement(By.xpath("/html/body/div/center/table/tbody/tr[2]/td/div/center/table/tbody/tr/td[2]/p/small/a[4]"));
-		target.click();
-		
-		user = driver.findElement(By.name("username"));
-		user.sendKeys("guest");
-		
-		pass = driver.findElement(By.name("password"));
-		pass.sendKeys("guest");
-		
-		target = driver.findElement(By.name("FormsButton2"));
-		target.click();
+//		user = driver.findElement(By.name("username"));
+//		user.sendKeys("guest");
+//		
+//		pass = driver.findElement(By.name("password"));
+//		pass.sendKeys("guest");
+//		
+//		target = driver.findElement(By.name("FormsButton2"));
+//		target.click();
+//		
+//		target = driver.findElement(By.xpath("/html/body/div/center/table/tbody/tr[2]/td/div/center/table/tbody/tr/td[2]/p/small/a[4]"));
+//		target.click();
+//		
+//		user = driver.findElement(By.name("username"));
+//		user.sendKeys("guest");
+//		
+//		pass = driver.findElement(By.name("password"));
+//		pass.sendKeys("guest");
+//		
+//		target = driver.findElement(By.name("FormsButton2"));
+//		target.click();
 		
 		
 		
