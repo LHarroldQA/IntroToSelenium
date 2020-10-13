@@ -16,7 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
+@ignore
 Feature: Demo site feature
 
   Scenario Outline: login to the demo website

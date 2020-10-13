@@ -48,7 +48,7 @@ public class Stocks {
 	}
 
 	@Then("^I can work out which one has the highest price$")
-	public void i_can_work_out_which_one_is_the_largest_riser() throws Throwable {
+	public void i_can_work_out_which_one_has_the_highest_price() throws Throwable {
 		ArrayList<String[]> myRisers = new ArrayList<String[]>();
 		String msg;
 		
@@ -76,6 +76,38 @@ public class Stocks {
 		}
 		
 		System.out.println("Highest price: " + highestValue);
+
+	}
+	
+	@Then("^I can work out which one has the lowest price$")
+	public void i_can_work_out_which_one_has_the_lowest_price() throws Throwable {
+		ArrayList<String[]> myRisers = new ArrayList<String[]>();
+		String msg;
+		
+		for(WebElement element:targList) {
+			msg = element.getText();
+			myRisers.add(msg.split("\n"));
+		}
+		
+		int x = 0;
+		double lowestValue = 10000;
+		
+		for(String[] strArr : myRisers) {
+			for(String item : strArr) {
+				if(x==1) {
+					System.out.println("- price:" + item + ",\t");
+					item = item.replace(",", "");
+					if(Double.parseDouble(item)<lowestValue) {
+						lowestValue = Double.parseDouble(item);
+					}
+				}
+				x++;
+			}
+			System.out.println();
+			x=0;
+		}
+		
+		System.out.println("Lowest price: " + lowestValue);
 
 	}
 	

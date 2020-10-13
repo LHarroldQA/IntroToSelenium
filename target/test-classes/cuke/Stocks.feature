@@ -16,10 +16,11 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@ignore
+
 Feature: Stocks test
-	@ignore
+
   Scenario: Browse the items available on the website
     Given the FTSE market overview
     When Order the market in terms of the risers
     Then I can work out which one has the highest price
+    And I can work out which one has the lowest price 
