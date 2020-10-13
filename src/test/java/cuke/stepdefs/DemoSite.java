@@ -1,7 +1,6 @@
 package cuke.stepdefs;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,7 +17,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class GoogleTest {
+public class DemoSite {
 	
 	public static WebDriver driver;
 	
@@ -28,63 +27,6 @@ public class GoogleTest {
 	public static void init() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Liam\\Documents\\workspace-spring-tool-suite-4-4.8.0.RELEASE\\seleniumtest\\src\\test\\resources\\drivers\\chromedriver1.exe");
 		driver = new ChromeDriver(chromeCfg());
-		System.out.println("Before");
-	}
-	
-	@Given("^we can open google$")
-	public void we_can_open_google() throws Throwable {
-		driver.get("https://google.com");
-		
-		assertEquals("Google",driver.getTitle());
-	}
-
-	@When("^we search for \"([^\"]*)\"$")
-	public void we_search_for(String arg1) throws Throwable {
-		target = driver.findElement(By.name("q"));
-		assertNotNull(target);
-		target.sendKeys(arg1);
-		assertEquals(arg1,target.getAttribute("value"));
-		target.submit();
-	}
-
-	@Then("^google will return us images of \"([^\"]*)\"$")
-	public void google_will_return_us_images_of(String arg1) throws Throwable {
-		target = driver.findElement(By.xpath("//*[@id=\"hdtb-msb-vis\"]/div[2]/a"));
-		target.click();
-		
-		assertEquals(arg1 + " - Google Search",driver.getTitle());
-	}
-		
-	@Given("^the correct web address$")
-	public void the_correct_web_address() throws Throwable {
-		driver.get("http://www.practiceselenium.com/welcome.html");
-	}
-
-	@When("^I navigate to the 'Menu' page$")
-	public void i_navigate_to_the_Menu_page() throws Throwable {
-		target = driver.findElement(By.xpath("//*[@id=\"wsb-nav-00000000-0000-0000-0000-000450914915\"]/ul/li[3]/a"));
-		target.click();
-	}
-
-	@Then("^I can browse a list of the available products\\.$")
-	public void i_can_browse_a_list_of_the_available_products() throws Throwable {
-		System.out.println("This is the " + driver.getTitle());
-		assertEquals("Menu",driver.getTitle());
-	}
-
-	@When("^I click the checkout button$")
-	public void i_click_the_checkout_button() throws Throwable {
-		target = driver.findElement(By.xpath("//*[@id=\"wsb-nav-00000000-0000-0000-0000-000450914915\"]/ul/li[3]/a"));
-		target.click();
-		
-		target = driver.findElement(By.xpath("//*[@id=\"wsb-button-00000000-0000-0000-0000-000451955160\"]/span"));
-		target.click();
-	}
-
-	@Then("^I am taken to the checkout page$")
-	public void i_am_taken_to_the_checkout_page() throws Throwable {
-		System.out.println("You have found the "+ driver.getTitle());
-		assertEquals("Check Out",driver.getTitle());
 	}
 	
 	@Given("^we can open the demo site$")
@@ -129,7 +71,6 @@ public class GoogleTest {
 	
 	@After
 	public static void cleanup() {
-		System.out.println("Clean");
 		driver.close();
 		driver.quit();
 	}
@@ -148,4 +89,6 @@ public class GoogleTest {
 
 		 return cOptions;
 	}
+	
+
 }
