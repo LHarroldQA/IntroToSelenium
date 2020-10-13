@@ -74,942 +74,22 @@
         "value": "#Sample Feature Definition Template"
       }
     ],
-    "line": 19,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 4652112100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3718236900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3688713400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.init()"
-            }
-          }
-        ],
-        "line": 28,
-        "name": "find animals on google images",
-        "description": "",
-        "id": "animal-test;find-animals-on-google-images;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 1450654700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 1181804400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5145924900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.cleanup()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3672645000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "we can open google",
-            "match": {
-              "location": "AnimalTest.we_can_open_google()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2454223400,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "we search for \"kittens\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "kittens",
-                  "offset": 15
-                }
-              ],
-              "location": "AnimalTest.we_search_for(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3296690700,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "google will return us images of \"kittens\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "kittens",
-                  "offset": 33
-                }
-              ],
-              "location": "AnimalTest.google_will_return_us_images_of(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 3496069500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3583342000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5140287300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.init()"
-            }
-          }
-        ],
-        "line": 29,
-        "name": "find animals on google images",
-        "description": "",
-        "id": "animal-test;find-animals-on-google-images;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 1415316800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 943539000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5157550900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.cleanup()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2630069100,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "we can open google",
-            "match": {
-              "location": "AnimalTest.we_can_open_google()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3327786900,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "we search for \"puppies\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "puppies",
-                  "offset": 15
-                }
-              ],
-              "location": "AnimalTest.we_search_for(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3544714700,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "google will return us images of \"puppies\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "puppies",
-                  "offset": 33
-                }
-              ],
-              "location": "AnimalTest.google_will_return_us_images_of(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 3491609300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3427740700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3582866900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.init()"
-            }
-          }
-        ],
-        "line": 30,
-        "name": "find animals on google images",
-        "description": "",
-        "id": "animal-test;find-animals-on-google-images;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 5049470400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 857167300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 4918070200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.cleanup()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3020526300,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "we can open google",
-            "match": {
-              "location": "AnimalTest.we_can_open_google()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3740554300,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "we search for \"bunnies\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "bunnies",
-                  "offset": 15
-                }
-              ],
-              "location": "AnimalTest.we_search_for(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2936261400,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "google will return us images of \"bunnies\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "bunnies",
-                  "offset": 33
-                }
-              ],
-              "location": "AnimalTest.google_will_return_us_images_of(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 3498062400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3459875400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3696778700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.init()"
-            }
-          }
-        ],
-        "line": 31,
-        "name": "find animals on google images",
-        "description": "",
-        "id": "animal-test;find-animals-on-google-images;;5",
-        "after": [
-          {
-            "result": {
-              "duration": 1273086200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 926235300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5177866700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.cleanup()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2195709900,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "we can open google",
-            "match": {
-              "location": "AnimalTest.we_can_open_google()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3338332600,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "we search for \"lions\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "lions",
-                  "offset": 15
-                }
-              ],
-              "location": "AnimalTest.we_search_for(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3586270900,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "google will return us images of \"lions\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "lions",
-                  "offset": 33
-                }
-              ],
-              "location": "AnimalTest.google_will_return_us_images_of(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Animal Test",
-    "description": "",
-    "id": "animal-test",
-    "keyword": "Feature",
-    "uri": "Animal.feature"
-  },
-  {
-    "comments": [
-      {
-        "line": 1,
-        "value": "#Author: your.email@your.domain.com"
-      },
-      {
-        "line": 2,
-        "value": "#Keywords Summary :"
-      },
-      {
-        "line": 3,
-        "value": "#Feature: List of scenarios."
-      },
-      {
-        "line": 4,
-        "value": "#Scenario: Business rule through list of steps with arguments."
-      },
-      {
-        "line": 5,
-        "value": "#Given: Some precondition step"
-      },
-      {
-        "line": 6,
-        "value": "#When: Some key actions"
-      },
-      {
-        "line": 7,
-        "value": "#Then: To observe outcomes or validation"
-      },
-      {
-        "line": 8,
-        "value": "#And,But: To enumerate more Given,When,Then steps"
-      },
-      {
-        "line": 9,
-        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
-      },
-      {
-        "line": 10,
-        "value": "#Examples: Container for s table"
-      },
-      {
-        "line": 11,
-        "value": "#Background: List of steps run before each of the scenarios"
-      },
-      {
-        "line": 12,
-        "value": "#\"\"\" (Doc Strings)"
-      },
-      {
-        "line": 13,
-        "value": "#| (Data Tables)"
-      },
-      {
-        "line": 14,
-        "value": "#@ (Tags/Labels):To group Scenarios"
-      },
-      {
-        "line": 15,
-        "value": "#\u003c\u003e (placeholder)"
-      },
-      {
-        "line": 16,
-        "value": "#\"\""
-      },
-      {
-        "line": 17,
-        "value": "## (Comments)"
-      },
-      {
-        "line": 18,
-        "value": "#Sample Feature Definition Template"
-      }
-    ],
-    "line": 19,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 3697647600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3425782100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3438552900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.init()"
-            }
-          }
-        ],
-        "line": 28,
-        "name": "login to the demo website",
-        "description": "",
-        "id": "demo-site-feature;login-to-the-demo-website;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 962853000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 858542600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 982545100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.cleanup()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 727645100,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "we can open the demo site",
-            "match": {
-              "location": "DemoSite.we_can_open_the_demo_site()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1082902700,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "we can great a user with the username: \"user\" and password: \"user\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "user",
-                  "offset": 40
-                },
-                {
-                  "val": "user",
-                  "offset": 61
-                }
-              ],
-              "location": "DemoSite.we_can_great_a_user_with_the_username_and_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 850353600,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "use those credintials to login. username: \"user\" and password: \"user\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "user",
-                  "offset": 43
-                },
-                {
-                  "val": "user",
-                  "offset": 64
-                }
-              ],
-              "location": "DemoSite.use_those_credintials_to_login_username_and_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 3345299700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3673830200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3669348400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.init()"
-            }
-          }
-        ],
-        "line": 29,
-        "name": "login to the demo website",
-        "description": "",
-        "id": "demo-site-feature;login-to-the-demo-website;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 1006134100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 996402800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 935313400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.cleanup()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 476212000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "we can open the demo site",
-            "match": {
-              "location": "DemoSite.we_can_open_the_demo_site()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 885405900,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "we can great a user with the username: \"root\" and password: \"root\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "root",
-                  "offset": 40
-                },
-                {
-                  "val": "root",
-                  "offset": 61
-                }
-              ],
-              "location": "DemoSite.we_can_great_a_user_with_the_username_and_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 717203600,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "use those credintials to login. username: \"root\" and password: \"root\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "root",
-                  "offset": 43
-                },
-                {
-                  "val": "root",
-                  "offset": 64
-                }
-              ],
-              "location": "DemoSite.use_those_credintials_to_login_username_and_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Demo site feature",
-    "description": "",
-    "id": "demo-site-feature",
-    "keyword": "Feature",
-    "uri": "DemoSite.feature"
-  },
-  {
-    "comments": [
-      {
-        "line": 1,
-        "value": "#Author: your.email@your.domain.com"
-      },
-      {
-        "line": 2,
-        "value": "#Keywords Summary :"
-      },
-      {
-        "line": 3,
-        "value": "#Feature: List of scenarios."
-      },
-      {
-        "line": 4,
-        "value": "#Scenario: Business rule through list of steps with arguments."
-      },
-      {
-        "line": 5,
-        "value": "#Given: Some precondition step"
-      },
-      {
-        "line": 6,
-        "value": "#When: Some key actions"
-      },
-      {
-        "line": 7,
-        "value": "#Then: To observe outcomes or validation"
-      },
-      {
-        "line": 8,
-        "value": "#And,But: To enumerate more Given,When,Then steps"
-      },
-      {
-        "line": 9,
-        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
-      },
-      {
-        "line": 10,
-        "value": "#Examples: Container for s table"
-      },
-      {
-        "line": 11,
-        "value": "#Background: List of steps run before each of the scenarios"
-      },
-      {
-        "line": 12,
-        "value": "#\"\"\" (Doc Strings)"
-      },
-      {
-        "line": 13,
-        "value": "#| (Data Tables)"
-      },
-      {
-        "line": 14,
-        "value": "#@ (Tags/Labels):To group Scenarios"
-      },
-      {
-        "line": 15,
-        "value": "#\u003c\u003e (placeholder)"
-      },
-      {
-        "line": 16,
-        "value": "#\"\""
-      },
-      {
-        "line": 17,
-        "value": "## (Comments)"
-      },
-      {
-        "line": 18,
-        "value": "#Sample Feature Definition Template"
-      }
-    ],
     "line": 20,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 3866809700,
+              "duration": 4754029000,
               "status": "passed"
             },
             "match": {
-              "location": "DemoSite.init()"
+              "location": "AnimalTest.init()"
             }
           },
           {
             "result": {
-              "duration": 3678136300,
+              "duration": 3480338200,
               "status": "passed"
             },
             "match": {
@@ -1018,31 +98,40 @@
           },
           {
             "result": {
-              "duration": 3678471800,
+              "duration": 3569616800,
               "status": "passed"
             },
             "match": {
-              "location": "AnimalTest.init()"
-            }
-          }
-        ],
-        "line": 23,
-        "name": "Browse the items available on the website",
-        "description": "",
-        "id": "tea-page-navigation-tests;browse-the-items-available-on-the-website",
-        "after": [
-          {
-            "result": {
-              "duration": 812565600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.cleanup()"
+              "location": "DemoSite.init()"
             }
           },
           {
             "result": {
-              "duration": 918821600,
+              "duration": 3410230400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stocks.init()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Browse the items available on the website",
+        "description": "",
+        "id": "stocks-test;browse-the-items-available-on-the-website",
+        "after": [
+          {
+            "result": {
+              "duration": 1169194300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AnimalTest.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1014216900,
               "status": "passed"
             },
             "match": {
@@ -1051,11 +140,20 @@
           },
           {
             "result": {
-              "duration": 918485100,
+              "duration": 953018900,
               "status": "passed"
             },
             "match": {
-              "location": "AnimalTest.cleanup()"
+              "location": "DemoSite.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5085963600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stocks.cleanup()"
             }
           }
         ],
@@ -1064,151 +162,48 @@
         "steps": [
           {
             "result": {
-              "duration": 11500015200,
+              "duration": 4156311300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the FTSE market overview",
+            "match": {
+              "location": "Stocks.we_can_open_the_demo_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51370400,
               "status": "passed"
             },
             "line": 24,
-            "name": "the correct web address",
+            "name": "Order the market in terms of the risers",
             "match": {
-              "location": "TeaTesting.the_correct_web_address()"
+              "location": "Stocks.order_the_market_in_terms_of_the_risers()"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 10575185600,
-              "status": "passed"
+              "duration": 1177411500,
+              "error_message": "java.lang.NumberFormatException: For input string: \"EXPN Experian Plc\"\r\n\tat java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)\r\n\tat java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)\r\n\tat java.base/java.lang.Double.parseDouble(Double.java:549)\r\n\tat cuke.stepdefs.Stocks.i_can_work_out_which_one_is_the_largest_riser(Stocks.java:68)\r\n\tat ✽.Then I can work out which one has the highest price(Stocks.feature:25)\r\n",
+              "status": "failed"
             },
             "line": 25,
-            "name": "I navigate to the \u0027Menu\u0027 page",
+            "name": "I can work out which one has the highest price",
             "match": {
-              "location": "TeaTesting.i_navigate_to_the_Menu_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 13859700,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "I can browse a list of the available products.",
-            "match": {
-              "location": "TeaTesting.i_can_browse_a_list_of_the_available_products()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 3626096000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3630648100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3582261100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.init()"
-            }
-          }
-        ],
-        "line": 29,
-        "name": "Add an item to the checkout",
-        "description": "",
-        "id": "tea-page-navigation-tests;add-an-item-to-the-checkout",
-        "after": [
-          {
-            "result": {
-              "duration": 4990576200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DemoSite.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 869461300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 934742400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AnimalTest.cleanup()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 11116388800,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "the correct web address",
-            "match": {
-              "location": "TeaTesting.the_correct_web_address()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 766759900,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "I click the checkout button",
-            "match": {
-              "location": "TeaTesting.i_click_the_checkout_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 16024300,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "I am taken to the checkout page",
-            "match": {
-              "location": "TeaTesting.i_am_taken_to_the_checkout_page()"
+              "location": "Stocks.i_can_work_out_which_one_is_the_largest_riser()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Tea page navigation tests",
+    "name": "Stocks test",
     "description": "",
-    "id": "tea-page-navigation-tests",
+    "id": "stocks-test",
     "keyword": "Feature",
-    "uri": "TeaTesting.feature"
+    "uri": "Stocks.feature"
   }
 ]

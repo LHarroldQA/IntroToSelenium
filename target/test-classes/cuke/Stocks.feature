@@ -16,15 +16,10 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@ignore
-Feature: Demo site feature
 
-  Scenario Outline: login to the demo website
-    Given we can open the demo site
-    When we can great a user with the username: "<username>" and password: "<password>"
-    Then use those credintials to login. username: "<username>" and password: "<password>"
+Feature: Stocks test
 
-    Examples: 
-      | username | password |
-      | user     | user     |
-      | root     | root     |
+  Scenario: Browse the items available on the website
+    Given the FTSE market overview
+    When Order the market in terms of the risers
+    Then I can work out which one has the highest price

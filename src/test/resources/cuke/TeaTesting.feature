@@ -16,7 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
+@ignore
 Feature: Tea page navigation tests
 
 
