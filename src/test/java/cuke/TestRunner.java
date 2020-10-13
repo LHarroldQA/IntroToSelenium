@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/test/resources/cuke",
 		glue = {"cuke.stepdefs"},
-		plugin = {"pretty", "html:target/html-reports/report","json:target/json-reports/report"},
+		plugin = {"pretty", "html:target/html-reports/report","json:target/json-reports/report","junit:target/junit-reports/report"},
 		monochrome = false,
 		tags = {"~@ignore"}
 		)

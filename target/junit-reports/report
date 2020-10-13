@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="30.01335">
+    <testcase classname="Stocks test" name="Browse the items available on the website" time="30.01335">
+        <system-out><![CDATA[Given the FTSE market overview..............................................passed
+When Order the market in terms of the risers................................passed
+Then I can work out which one has the highest price.........................passed
+And I can work out which one has the lowest price...........................passed
+]]></system-out>
+    </testcase>
+</testsuite>

@@ -80,16 +80,7 @@
         "before": [
           {
             "result": {
-              "duration": 4602380800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Stocks.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3601390000,
+              "duration": 4799462501,
               "status": "passed"
             },
             "match": {
@@ -98,7 +89,16 @@
           },
           {
             "result": {
-              "duration": 3724147900,
+              "duration": 3375581400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TeaTesting.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3945330101,
               "status": "passed"
             },
             "match": {
@@ -107,11 +107,11 @@
           },
           {
             "result": {
-              "duration": 4071448600,
+              "duration": 3747161900,
               "status": "passed"
             },
             "match": {
-              "location": "TeaTesting.init()"
+              "location": "Stocks.init()"
             }
           }
         ],
@@ -122,16 +122,7 @@
         "after": [
           {
             "result": {
-              "duration": 5093806400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Stocks.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5089089600,
+              "duration": 1080856400,
               "status": "passed"
             },
             "match": {
@@ -140,7 +131,16 @@
           },
           {
             "result": {
-              "duration": 854885100,
+              "duration": 1176378899,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TeaTesting.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 902478300,
               "status": "passed"
             },
             "match": {
@@ -149,11 +149,11 @@
           },
           {
             "result": {
-              "duration": 1010449500,
+              "duration": 5107697000,
               "status": "passed"
             },
             "match": {
-              "location": "TeaTesting.cleanup()"
+              "location": "Stocks.cleanup()"
             }
           }
         ],
@@ -162,7 +162,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3305045600,
+              "duration": 4340506601,
               "status": "passed"
             },
             "line": 23,
@@ -174,7 +174,7 @@
           },
           {
             "result": {
-              "duration": 43966300,
+              "duration": 72470600,
               "status": "passed"
             },
             "line": 24,
@@ -186,7 +186,7 @@
           },
           {
             "result": {
-              "duration": 1254956000,
+              "duration": 1082725301,
               "status": "passed"
             },
             "line": 25,
@@ -198,7 +198,7 @@
           },
           {
             "result": {
-              "duration": 496046100,
+              "duration": 382700700,
               "status": "passed"
             },
             "line": 26,

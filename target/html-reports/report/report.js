@@ -81,19 +81,19 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4602380800,
+  "duration": 4799462501,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3601390000,
+  "duration": 3375581400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3724147900,
+  "duration": 3945330101,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4071448600,
+  "duration": 3747161900,
   "status": "passed"
 });
 formatter.scenario({
@@ -128,44 +128,44 @@ formatter.match({
   "location": "Stocks.we_can_open_the_demo_site()"
 });
 formatter.result({
-  "duration": 3305045600,
+  "duration": 4340506601,
   "status": "passed"
 });
 formatter.match({
   "location": "Stocks.order_the_market_in_terms_of_the_risers()"
 });
 formatter.result({
-  "duration": 43966300,
+  "duration": 72470600,
   "status": "passed"
 });
 formatter.match({
   "location": "Stocks.i_can_work_out_which_one_has_the_highest_price()"
 });
 formatter.result({
-  "duration": 1254956000,
+  "duration": 1082725301,
   "status": "passed"
 });
 formatter.match({
   "location": "Stocks.i_can_work_out_which_one_has_the_lowest_price()"
 });
 formatter.result({
-  "duration": 496046100,
+  "duration": 382700700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 5093806400,
+  "duration": 1080856400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 5089089600,
+  "duration": 1176378899,
   "status": "passed"
 });
 formatter.after({
-  "duration": 854885100,
+  "duration": 902478300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1010449500,
+  "duration": 5107697000,
   "status": "passed"
 });
 });
