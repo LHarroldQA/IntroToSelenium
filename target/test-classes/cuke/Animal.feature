@@ -16,7 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
+@ignore
 Feature: Animal Test
 
   Scenario Outline: find animals on google images

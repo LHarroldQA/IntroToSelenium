@@ -34,12 +34,18 @@ public class DemoSite {
 		driver.get("http://thedemosite.co.uk/index.php");
 		assertEquals("FREE example PHP code and online MySQL database - example username password protected site",driver.getTitle());
 	}
+	
+	@Given("^open the add a user page$")
+	public void open_the_add_a_user_page() throws Throwable {
+		target = driver.findElement(By.xpath("/html/body/div/center/table/tbody/tr[2]/td/div/center/table/tbody/tr/td[2]/p/small/a[3]"));
+		target.click();
+		assertEquals("Add a user - FREE PHP code and SQL",driver.getTitle());
+	}
 
 	@When("^we can great a user with the username: \"([^\"]*)\" and password: \"([^\"]*)\"$")
 	public void we_can_great_a_user_with_the_username_and_password(String arg1, String arg2) throws Throwable {
 		WebElement userInput,passInput;
-		target = driver.findElement(By.xpath("/html/body/div/center/table/tbody/tr[2]/td/div/center/table/tbody/tr/td[2]/p/small/a[3]"));
-		target.click();
+		
 		userInput = driver.findElement(By.xpath("/html/body/table/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/div/center/table/tbody/tr[1]/td[2]/p/input"));
 		passInput = driver.findElement(By.xpath("/html/body/table/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/div/center/table/tbody/tr[2]/td[2]/p/input"));
 		userInput.sendKeys(arg1);

@@ -16,11 +16,12 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@ignore
+
 Feature: Demo site feature
-@ignore
+
   Scenario Outline: login to the demo website
     Given we can open the demo site
+    And open the add a user page
     When we can great a user with the username: "<username>" and password: "<password>"
     Then use those credintials to login. username: "<username>" and password: "<password>"
 
