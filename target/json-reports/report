@@ -80,25 +80,16 @@
         "before": [
           {
             "result": {
-              "duration": 4754029000,
+              "duration": 4984290900,
               "status": "passed"
             },
             "match": {
-              "location": "AnimalTest.init()"
+              "location": "Stocks.init()"
             }
           },
           {
             "result": {
-              "duration": 3480338200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.init()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3569616800,
+              "duration": 3728203900,
               "status": "passed"
             },
             "match": {
@@ -107,40 +98,40 @@
           },
           {
             "result": {
-              "duration": 3410230400,
+              "duration": 3653916700,
               "status": "passed"
             },
             "match": {
-              "location": "Stocks.init()"
+              "location": "TeaTesting.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4194172900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AnimalTest.init()"
             }
           }
         ],
-        "line": 22,
-        "name": "Browse the items available on the website",
+        "line": 30,
+        "name": "find animals on google images",
         "description": "",
-        "id": "stocks-test;browse-the-items-available-on-the-website",
+        "id": "animal-test;find-animals-on-google-images;;2",
         "after": [
           {
             "result": {
-              "duration": 1169194300,
+              "duration": 1181428900,
               "status": "passed"
             },
             "match": {
-              "location": "AnimalTest.cleanup()"
+              "location": "Stocks.cleanup()"
             }
           },
           {
             "result": {
-              "duration": 1014216900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TeaTesting.cleanup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 953018900,
+              "duration": 5583187100,
               "status": "passed"
             },
             "match": {
@@ -149,61 +140,591 @@
           },
           {
             "result": {
-              "duration": 5085963600,
+              "duration": 1027680300,
               "status": "passed"
             },
             "match": {
-              "location": "Stocks.cleanup()"
+              "location": "TeaTesting.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5322316100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AnimalTest.cleanup()"
             }
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4156311300,
+              "duration": 2843605100,
               "status": "passed"
             },
             "line": 23,
-            "name": "the FTSE market overview",
+            "name": "we can open google",
             "match": {
-              "location": "Stocks.we_can_open_the_demo_site()"
+              "location": "AnimalTest.we_can_open_google()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 51370400,
+              "duration": 4772901500,
               "status": "passed"
             },
             "line": 24,
-            "name": "Order the market in terms of the risers",
+            "name": "we search for \"kittens\"",
             "match": {
-              "location": "Stocks.order_the_market_in_terms_of_the_risers()"
+              "arguments": [
+                {
+                  "val": "kittens",
+                  "offset": 15
+                }
+              ],
+              "location": "AnimalTest.we_search_for(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1177411500,
-              "error_message": "java.lang.NumberFormatException: For input string: \"EXPN Experian Plc\"\r\n\tat java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)\r\n\tat java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)\r\n\tat java.base/java.lang.Double.parseDouble(Double.java:549)\r\n\tat cuke.stepdefs.Stocks.i_can_work_out_which_one_is_the_largest_riser(Stocks.java:68)\r\n\tat ✽.Then I can work out which one has the highest price(Stocks.feature:25)\r\n",
-              "status": "failed"
+              "duration": 3844522300,
+              "status": "passed"
             },
             "line": 25,
-            "name": "I can work out which one has the highest price",
+            "name": "google will return us images of \"kittens\"",
             "match": {
-              "location": "Stocks.i_can_work_out_which_one_is_the_largest_riser()"
+              "arguments": [
+                {
+                  "val": "kittens",
+                  "offset": 33
+                }
+              ],
+              "location": "AnimalTest.google_will_return_us_images_of(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2482185300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "google will return us videos of \"kittens\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kittens",
+                  "offset": 33
+                }
+              ],
+              "location": "AnimalTest.google_will_return_us_videos_of(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3739716300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stocks.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3423210400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoSite.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3626521300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TeaTesting.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4055707900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AnimalTest.init()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "find animals on google images",
+        "description": "",
+        "id": "animal-test;find-animals-on-google-images;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5405289200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stocks.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1263607300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoSite.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1073225100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TeaTesting.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4977547300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AnimalTest.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2463639400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "we can open google",
+            "match": {
+              "location": "AnimalTest.we_can_open_google()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3853856900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "we search for \"cute puppies\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cute puppies",
+                  "offset": 15
+                }
+              ],
+              "location": "AnimalTest.we_search_for(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5795286900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "google will return us images of \"cute puppies\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cute puppies",
+                  "offset": 33
+                }
+              ],
+              "location": "AnimalTest.google_will_return_us_images_of(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2783866100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "google will return us videos of \"cute puppies\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cute puppies",
+                  "offset": 33
+                }
+              ],
+              "location": "AnimalTest.google_will_return_us_videos_of(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3376626500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stocks.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3646003500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoSite.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3456564500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TeaTesting.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3626916300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AnimalTest.init()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "find animals on google images",
+        "description": "",
+        "id": "animal-test;find-animals-on-google-images;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 2471131800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stocks.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5360117400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoSite.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1172324800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TeaTesting.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5218837200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AnimalTest.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2668143100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "we can open google",
+            "match": {
+              "location": "AnimalTest.we_can_open_google()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1648348000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "we search for \"bunnies\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bunnies",
+                  "offset": 15
+                }
+              ],
+              "location": "AnimalTest.we_search_for(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3781326700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "google will return us images of \"bunnies\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bunnies",
+                  "offset": 33
+                }
+              ],
+              "location": "AnimalTest.google_will_return_us_images_of(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2197161800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "google will return us videos of \"bunnies\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bunnies",
+                  "offset": 33
+                }
+              ],
+              "location": "AnimalTest.google_will_return_us_videos_of(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3447491700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stocks.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3633417800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoSite.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3866168100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TeaTesting.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3968575800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AnimalTest.init()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "find animals on google images",
+        "description": "",
+        "id": "animal-test;find-animals-on-google-images;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 5169096100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stocks.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1029013300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoSite.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 932066000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TeaTesting.cleanup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5349719000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AnimalTest.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2695416000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "we can open google",
+            "match": {
+              "location": "AnimalTest.we_can_open_google()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5495545300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "we search for \"lions\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lions",
+                  "offset": 15
+                }
+              ],
+              "location": "AnimalTest.we_search_for(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4050779500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "google will return us images of \"lions\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lions",
+                  "offset": 33
+                }
+              ],
+              "location": "AnimalTest.google_will_return_us_images_of(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2283902700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "google will return us videos of \"lions\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lions",
+                  "offset": 33
+                }
+              ],
+              "location": "AnimalTest.google_will_return_us_videos_of(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Stocks test",
+    "name": "Animal Test",
     "description": "",
-    "id": "stocks-test",
+    "id": "animal-test",
     "keyword": "Feature",
-    "uri": "Stocks.feature"
+    "uri": "Animal.feature"
   }
 ]

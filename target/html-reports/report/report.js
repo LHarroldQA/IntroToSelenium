@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Stocks.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Animal.feature");
 formatter.feature({
   "comments": [
     {
@@ -75,86 +75,541 @@ formatter.feature({
     }
   ],
   "line": 20,
-  "name": "Stocks test",
+  "name": "Animal Test",
   "description": "",
-  "id": "stocks-test",
+  "id": "animal-test",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 4754029000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3480338200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3569616800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3410230400,
-  "status": "passed"
-});
-formatter.scenario({
+formatter.scenarioOutline({
   "line": 22,
-  "name": "Browse the items available on the website",
+  "name": "find animals on google images",
   "description": "",
-  "id": "stocks-test;browse-the-items-available-on-the-website",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "id": "animal-test;find-animals-on-google-images",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 23,
-  "name": "the FTSE market overview",
+  "name": "we can open google",
   "keyword": "Given "
 });
 formatter.step({
   "line": 24,
-  "name": "Order the market in terms of the risers",
+  "name": "we search for \"\u003cAnimals\u003e\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 25,
-  "name": "I can work out which one has the highest price",
+  "name": "google will return us images of \"\u003cAnimals\u003e\"",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 26,
+  "name": "google will return us videos of \"\u003cAnimals\u003e\"",
+  "keyword": "And "
+});
+formatter.examples({
+  "line": 28,
+  "name": "",
+  "description": "",
+  "id": "animal-test;find-animals-on-google-images;",
+  "rows": [
+    {
+      "cells": [
+        "Animals"
+      ],
+      "line": 29,
+      "id": "animal-test;find-animals-on-google-images;;1"
+    },
+    {
+      "cells": [
+        "kittens"
+      ],
+      "line": 30,
+      "id": "animal-test;find-animals-on-google-images;;2"
+    },
+    {
+      "cells": [
+        "cute puppies"
+      ],
+      "line": 31,
+      "id": "animal-test;find-animals-on-google-images;;3"
+    },
+    {
+      "cells": [
+        "bunnies"
+      ],
+      "line": 32,
+      "id": "animal-test;find-animals-on-google-images;;4"
+    },
+    {
+      "cells": [
+        "lions"
+      ],
+      "line": 33,
+      "id": "animal-test;find-animals-on-google-images;;5"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.before({
+  "duration": 4984290900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3728203900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3653916700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 4194172900,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 30,
+  "name": "find animals on google images",
+  "description": "",
+  "id": "animal-test;find-animals-on-google-images;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 23,
+  "name": "we can open google",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 24,
+  "name": "we search for \"kittens\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 25,
+  "name": "google will return us images of \"kittens\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "google will return us videos of \"kittens\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
 formatter.match({
-  "location": "Stocks.we_can_open_the_demo_site()"
+  "location": "AnimalTest.we_can_open_google()"
 });
 formatter.result({
-  "duration": 4156311300,
+  "duration": 2843605100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Stocks.order_the_market_in_terms_of_the_risers()"
+  "arguments": [
+    {
+      "val": "kittens",
+      "offset": 15
+    }
+  ],
+  "location": "AnimalTest.we_search_for(String)"
 });
 formatter.result({
-  "duration": 51370400,
+  "duration": 4772901500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Stocks.i_can_work_out_which_one_is_the_largest_riser()"
+  "arguments": [
+    {
+      "val": "kittens",
+      "offset": 33
+    }
+  ],
+  "location": "AnimalTest.google_will_return_us_images_of(String)"
 });
 formatter.result({
-  "duration": 1177411500,
-  "error_message": "java.lang.NumberFormatException: For input string: \"EXPN Experian Plc\"\r\n\tat java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)\r\n\tat java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)\r\n\tat java.base/java.lang.Double.parseDouble(Double.java:549)\r\n\tat cuke.stepdefs.Stocks.i_can_work_out_which_one_is_the_largest_riser(Stocks.java:68)\r\n\tat ✽.Then I can work out which one has the highest price(Stocks.feature:25)\r\n",
-  "status": "failed"
+  "duration": 3844522300,
+  "status": "passed"
 });
-formatter.after({
-  "duration": 1169194300,
+formatter.match({
+  "arguments": [
+    {
+      "val": "kittens",
+      "offset": 33
+    }
+  ],
+  "location": "AnimalTest.google_will_return_us_videos_of(String)"
+});
+formatter.result({
+  "duration": 2482185300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1014216900,
+  "duration": 1181428900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 953018900,
+  "duration": 5583187100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 5085963600,
+  "duration": 1027680300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 5322316100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3739716300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3423210400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3626521300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 4055707900,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 31,
+  "name": "find animals on google images",
+  "description": "",
+  "id": "animal-test;find-animals-on-google-images;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 23,
+  "name": "we can open google",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 24,
+  "name": "we search for \"cute puppies\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 25,
+  "name": "google will return us images of \"cute puppies\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "google will return us videos of \"cute puppies\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AnimalTest.we_can_open_google()"
+});
+formatter.result({
+  "duration": 2463639400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "cute puppies",
+      "offset": 15
+    }
+  ],
+  "location": "AnimalTest.we_search_for(String)"
+});
+formatter.result({
+  "duration": 3853856900,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "cute puppies",
+      "offset": 33
+    }
+  ],
+  "location": "AnimalTest.google_will_return_us_images_of(String)"
+});
+formatter.result({
+  "duration": 5795286900,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "cute puppies",
+      "offset": 33
+    }
+  ],
+  "location": "AnimalTest.google_will_return_us_videos_of(String)"
+});
+formatter.result({
+  "duration": 2783866100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 5405289200,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1263607300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1073225100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 4977547300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3376626500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3646003500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3456564500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3626916300,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 32,
+  "name": "find animals on google images",
+  "description": "",
+  "id": "animal-test;find-animals-on-google-images;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 23,
+  "name": "we can open google",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 24,
+  "name": "we search for \"bunnies\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 25,
+  "name": "google will return us images of \"bunnies\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "google will return us videos of \"bunnies\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AnimalTest.we_can_open_google()"
+});
+formatter.result({
+  "duration": 2668143100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "bunnies",
+      "offset": 15
+    }
+  ],
+  "location": "AnimalTest.we_search_for(String)"
+});
+formatter.result({
+  "duration": 1648348000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "bunnies",
+      "offset": 33
+    }
+  ],
+  "location": "AnimalTest.google_will_return_us_images_of(String)"
+});
+formatter.result({
+  "duration": 3781326700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "bunnies",
+      "offset": 33
+    }
+  ],
+  "location": "AnimalTest.google_will_return_us_videos_of(String)"
+});
+formatter.result({
+  "duration": 2197161800,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 2471131800,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 5360117400,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1172324800,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 5218837200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3447491700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3633417800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3866168100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3968575800,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 33,
+  "name": "find animals on google images",
+  "description": "",
+  "id": "animal-test;find-animals-on-google-images;;5",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 23,
+  "name": "we can open google",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 24,
+  "name": "we search for \"lions\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 25,
+  "name": "google will return us images of \"lions\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "google will return us videos of \"lions\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AnimalTest.we_can_open_google()"
+});
+formatter.result({
+  "duration": 2695416000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "lions",
+      "offset": 15
+    }
+  ],
+  "location": "AnimalTest.we_search_for(String)"
+});
+formatter.result({
+  "duration": 5495545300,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "lions",
+      "offset": 33
+    }
+  ],
+  "location": "AnimalTest.google_will_return_us_images_of(String)"
+});
+formatter.result({
+  "duration": 4050779500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "lions",
+      "offset": 33
+    }
+  ],
+  "location": "AnimalTest.google_will_return_us_videos_of(String)"
+});
+formatter.result({
+  "duration": 2283902700,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 5169096100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1029013300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 932066000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 5349719000,
   "status": "passed"
 });
 });

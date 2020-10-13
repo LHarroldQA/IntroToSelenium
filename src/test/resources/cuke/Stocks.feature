@@ -16,9 +16,9 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
+@ignore
 Feature: Stocks test
-
+	@ignore
   Scenario: Browse the items available on the website
     Given the FTSE market overview
     When Order the market in terms of the risers

@@ -18,7 +18,7 @@
 #Sample Feature Definition Template
 @ignore
 Feature: Demo site feature
-
+@ignore
   Scenario Outline: login to the demo website
     Given we can open the demo site
     When we can great a user with the username: "<username>" and password: "<password>"

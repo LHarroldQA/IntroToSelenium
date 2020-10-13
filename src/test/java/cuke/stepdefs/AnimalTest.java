@@ -53,9 +53,14 @@ public class AnimalTest {
 		
 		assertEquals(arg1 + " - Google Search",driver.getTitle());
 	}
-		
-
 	
+	@Then("^google will return us videos of \"([^\"]*)\"$")
+	public void google_will_return_us_videos_of(String arg1) throws Throwable {
+		target = driver.findElement(By.xpath("//*[@id=\"yDmH0d\"]/div[2]/c-wiz/div[1]/div/div[1]/div[1]/div/div/a[2]"));
+		target.click();
+		
+		assertEquals(arg1 + " - Google Search",driver.getTitle());
+	}
 
 	@After
 	public static void cleanup() {

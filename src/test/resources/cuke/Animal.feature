@@ -16,18 +16,19 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@ignore
+
 Feature: Animal Test
 
   Scenario Outline: find animals on google images
     Given we can open google
     When we search for "<Animals>"
     Then google will return us images of "<Animals>"
+    And google will return us videos of "<Animals>"
 
     Examples: 
-      | Animals |
-      | kittens |
-      | puppies |
-      | bunnies |
-      | lions   |
+      | Animals      |
+      | kittens      |
+      | cute puppies |
+      | bunnies      |
+      | lions        |
 
